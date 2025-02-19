@@ -9,8 +9,17 @@ declare module 'vue' {
   export interface GlobalComponents {
     Dashboard: typeof import('./../components/Dashboard.vue')['default']
     DashboardFinished: typeof import('./../components/Dashboard-finished.vue')['default']
+    Demo: typeof import('./../components/Demo.vue')['default']
     HelloWorld: typeof import('./../components/HelloWorld.vue')['default']
+    MenuBar: typeof import('./../components/MenuBar.vue')['default']
+    PdfTranslator: typeof import('./../components/PdfTranslator.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Settings: typeof import('./../components/Settings.vue')['default']
+    Sidebar: typeof import('./../components/sidebar/Sidebar.vue')['default']
+    SidebarIcons: typeof import('./../components/sidebar/SidebarIcons.vue')['default']
+    SideNavBar: typeof import('./../components/SideNavBar.vue')['default']
+    Switch: typeof import('./../components/switch/Switch.vue')['default']
+    Translate: typeof import('./../components/Translate.vue')['default']
   }
 }

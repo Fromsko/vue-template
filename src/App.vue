@@ -1,14 +1,11 @@
-<script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
-// import Dashboard from './components/Dashboard.vue'
-import DashboardVue from './components/Dashboard-finished.vue'
-</script>
-
 <template>
-  <div class="h-screen bg-gray-100">
-    <!-- <HelloWorld msg="Vite + Vue" /> -->
-
-    <!-- <Dashboard /> -->
-    <DashboardVue />
+  <!-- 左右布局 -->
+  <div class="flex min-h-screen bg-gray-100">
+    <!-- 左侧导航栏 -->
+    <sidebar class="w-1/12 my-auto" />
+    <!-- 右侧内容 -->
+    <div class="w-11/12">
+      <router-view />
+    </div>
   </div>
 </template>
